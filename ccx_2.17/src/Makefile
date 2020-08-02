@@ -35,6 +35,7 @@ ccx_2.17.exe: $(OCCXMAIN) ccx_2.17c1.a $(LIBS)
 
 ccx_2.17c1.a: $(OCCXC1) $(OCCXF)
 	ar vr $@ $?
-	ar r ccx_2.17c1.a $(OCCXC2)
+ccx_2.17c1.a: ccx_2.17c1.a $(OCCXC2)
+	ar r $@ $?
 clean:
-	rm -f *.o ccx_2.17f.a ccx_2.17c1.a ccx_2.17c2.a ccx_2.17.exe               
+	rm -f *.o ccx_2.17c1.a ccx_2.17.exe               
