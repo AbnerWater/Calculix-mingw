@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "calculix_test",
+            "name": "calculix_debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\ccx_2.17\\src\\ccx_2.17.exe",

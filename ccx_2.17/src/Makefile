@@ -15,12 +15,11 @@ include Makefile.inc
 SCCXMAIN = ccx_2.17.c
 
 OCCXF = $(SCCXF:.f=.o)
-OCCXC1 = $(SCCXC1:.c=.o)
-OCCXC2 = $(SCCXC2:.c=.o)
+OCCXC = $(SCCXC:.c=.o)
 OCCXMAIN = $(SCCXMAIN:.c=.o)
 
 DIR=../../SPOOLES.2.2
-LIBDIR=c:/msys64/mingw64/x86_64-w64-mingw32/lib
+LIBDIR=C:/msys64/mingw64/x86_64-w64-mingw32/lib
 # MKLDIR=C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2019\windows/mkl/lib/intel64_win
 # intelDir=C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2019.0.117/linux/compiler/lib/intel64_lin
 
@@ -30,12 +29,10 @@ LIBS = \
 		$(DIR)/spooles.a \
 	    $(LIBDIR)/libpthread.a\
 
-ccx_2.17.exe: $(OCCXMAIN) ccx_2.17c1.a $(LIBS)
-	./date.pl; $(CC) $(CFLAGS) -c ccx_2.17.c; $(FC) -fopenmp -Wall -O3 -o $@ $(OCCXMAIN) ccx_2.17c1.a $(LIBS)
+ccx_2.17.exe: $(OCCXMAIN) ccx_2.17c.a $(LIBS)
+	./date.pl; $(CC) $(CFLAGS) -c ccx_2.17.c; $(FC) -fopenmp -Wall -O3 -o $@ $(OCCXMAIN) ccx_2.17c.a $(LIBS)
 
-ccx_2.17c1.a: $(OCCXC1) $(OCCXF)
+ccx_2.17c.a: $(OCCXC) $(OCCXF)
 	ar vr $@ $?
-ccx_2.17c1.a: ccx_2.17c1.a $(OCCXC2)
-	ar r $@ $?
 clean:
-	rm -f *.o ccx_2.17c1.a ccx_2.17.exe               
+	rm -f *.o ccx_2.17c.a ccx_2.17.exe               

@@ -977,7 +977,7 @@ wye.f \
 zeta_calc.f \
 zienzhu.f 
 
-SCCXC1 = \
+SCCXC = \
 add_rect.c \
 arpack.c \
 arpackbu.c \
@@ -1152,8 +1152,6 @@ resultsinduction.c \
 resultsini.c \
 results_se.c \
 resultsstr.c \
-
-SCCXC2 = \
 rhsmain.c \
 rhspcompmain.c \
 rhspmain.c \

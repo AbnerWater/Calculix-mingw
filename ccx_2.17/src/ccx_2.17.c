@@ -152,7 +152,7 @@ _set_output_format(_TWO_DIGIT_EXPONENT);
   printf("software, and you are welcome to redistribute it under\n");
   printf("certain conditions, see gpl.htm\n\n");
   printf("************************************************************\n\n");
-  printf("You are using an executable made on 2020年08月 2日 10:46:49\n");
+  printf("You are using an executable made on 2022年01月 6日 16:39:11\n");
   fflush(stdout);
 
   NNEW(ipoinp,ITG,2*nentries);

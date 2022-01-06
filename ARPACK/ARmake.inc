@@ -25,7 +25,7 @@
 # | other than your home directory.      |
 # %--------------------------------------%
 #
-home = D:/calculix/ARPACK
+home = C:/000_STUDY/Calculix-mingw/ARPACK
 #
 #  %--------------------------------------%
 #  | The platform identifier to suffix to |
