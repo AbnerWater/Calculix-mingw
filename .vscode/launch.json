@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\ccx_2.17\\src\\ccx_2.17.exe",
-            "args": ["-i","1_demo"],
+            "args": ["-i","Analysis-2"],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],

@@ -200,7 +200,7 @@ void frd(double *co,ITG *nk,ITG *kon,ITG *ipkon,char *lakon,ITG *ne0,
     fprintf(f1,"%5sUHOST                                                              \n",p1);
     fprintf(f1,"%5sUPGM               CalculiX                                        \n",p1);
     fprintf(f1,"%5sUVERSION           Version 2.17                             \n",p1);
-    fprintf(f1,"%5sUCOMPILETIME       2022年01月 6日 16:39:11                    \n",p1);
+    fprintf(f1,"%5sUCOMPILETIME       2022年10月13日 10:11:49                    \n",p1);
     fprintf(f1,"%5sUDIR                                                               \n",p1);
     fprintf(f1,"%5sUDBN                                                               \n",p1);
     

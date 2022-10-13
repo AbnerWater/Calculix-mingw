@@ -20,11 +20,14 @@ OCCXMAIN = $(SCCXMAIN:.c=.o)
 
 DIR=../../SPOOLES.2.2
 LIBDIR=C:/msys64/mingw64/x86_64-w64-mingw32/lib
+QUADMATH= C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0
 # MKLDIR=C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2019\windows/mkl/lib/intel64_win
 # intelDir=C:/Program Files (x86)/IntelSWTools/compilers_and_libraries_2019.0.117/linux/compiler/lib/intel64_lin
 
 LIBS = \
 		$(LIBDIR)/libm.a \
+		$(LIBDIR)/libgcc_s.a \
+		$(QUADMATH)/libquadmath.a \
 		../../ARPACK/libarpack_MINGW64.a \
 		$(DIR)/spooles.a \
 	    $(LIBDIR)/libpthread.a\
